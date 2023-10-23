@@ -57,7 +57,7 @@
                     <td><%= @name %></td>
                     <td><%= @mail %></td>
                     <td><%= @tel %></td>
-                    <td><%= @content %></td>
+                    <td><%= @content.gsub(/\r\n|\r|\n/, "<br>") %></td>
                   </tr>
                 </tbody>
             </table>
@@ -67,7 +67,7 @@
             <a href="/" class="btn btn-success">戻る</a>
         </div>
     </div>
-    <footer class="text-center pt-3 border-top">２１くぁq
+    <footer class="text-center pt-3 border-top">
         &copy; 2021 SAMPLE Inc.
     </footer>
 
